@@ -1,18 +1,35 @@
-# Project Title (Replace with your actual project name)
+# Murph AI
 
-A brief description of your project. This appears to be a SaaS application built with Next.js, likely focused on Instagram automation features, including user authentication, integrations, and subscription management via Lemon Squeezy.
+A Next.js SaaS platform providing Instagram automation tools, built with TypeScript, Clerk for authentication, Prisma for database interactions, and Lemon Squeezy for subscription management.
 
 ## Features
 
-* **User Authentication:** Secure sign-up, sign-in, and user management handled by Clerk [cite: uploaded:src/middleware.ts, uploaded:src/actions/user/index.ts].
-* **User Onboarding:** Initial setup process for new users [cite: uploaded:src/actions/user/index.ts].
-* **Instagram Integration:** Connects with Instagram accounts, potentially refreshes tokens, and fetches media posts [cite: uploaded:src/actions/user/index.ts, uploaded:src/actions/automations/index.ts].
-* **Automation Management:** Allows users to create, view, and manage automations (e.g., based on triggers like DMs/comments, keywords, specific posts) [cite: uploaded:src/actions/automations/index.ts, uploaded:src/hooks/use-automations.ts, uploaded:src/redux/slices/automation.ts].
-* **Subscription Management:** Integrates with Lemon Squeezy for handling paid subscriptions (e.g., "PRO" plan) [cite: Based on conversation history].
+* **User Authentication:** Secure sign-up, sign-in, and user management handled by Clerk.
+* **User Onboarding:** Initial setup process for new users.
+* **Instagram Integration:** Connects with Instagram accounts, potentially refreshes tokens, and fetches media posts 
+* **Automation Management:** Allows users to create, view, and manage automations (e.g., based on triggers like DMs/comments, keywords, specific posts).
+* **Subscription Management:** Integrates with Lemon Squeezy for handling paid subscriptions (e.g., "PRO" plan).
     * Generates unique checkout links via the backend.
     * Handles subscription status updates via Lemon Squeezy webhooks.
-* **Protected Routes:** Middleware ensures certain routes/APIs require authentication [cite: uploaded:src/middleware.ts].
+* **Protected Routes:** Middleware ensures certain routes/APIs require authentication.
 * **API Endpoints:** Backend API routes handle user actions, automation logic, payment processing, and webhooks.
+
+## Screenshots
+
+*(Add your screenshots here using Markdown syntax. It's recommended to create a folder like `screenshots` or `docs/images` in your repository to store the image files.)*
+
+**Example:**
+
+**Dashboard:**
+![Dashboard Screenshot](./screenshots/dashboard.png)
+
+**Automation Setup:**
+![Automation Setup Screenshot](./screenshots/automation-setup.png)
+
+**Subscription Page:**
+![Subscription Page Screenshot](./screenshots/subscription-page.png)
+
+
 
 ## Tech Stack
 
